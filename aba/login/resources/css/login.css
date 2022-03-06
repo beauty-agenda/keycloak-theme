@@ -1,0 +1,305 @@
+.login-html body {
+  background-color: #f7f5ed;
+  height: 100%;
+}
+
+.aba-login-pf-page-header {
+  margin-bottom: 20px;
+}
+
+.aba-signup-indicator-wrapper {
+  padding: 20px 0 0 0;
+  border-top: 1px solid #898989;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.aba-signup-indicator-wrapper p {
+  margin: 0;
+}
+
+.aba-signup-link {
+  text-decoration: underline;
+  color: #AD911E;
+}
+
+.aba-form-options-wrapper-class {
+  margin: 20px 0;
+  text-align: center;
+  text-decoration: underline;
+  color: #898989;
+}
+
+/* Button style */
+.aba-btn {
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 10px 16px;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+
+  /* inherit font, color & text align from ancestor */
+  color: inherit;
+  font: inherit;
+  text-align: center;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.aba-btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.aba-btn-lg {
+  padding: 10px 16px;
+  font-size: 20px;
+}
+
+.aba-btn-block {
+  display: block;
+  margin: 0 auto;
+}
+
+.aba-btn-primary {
+  background-color: #222220;
+  border: 1px solid #707070;
+  color: #ad911e;
+  font-weight: 600;
+}
+
+/* Input style */
+.aba-form-group {
+  position: relative;
+  margin: 40px 0;
+  background: none;
+}
+
+.aba-input-form-control {
+  display: block;
+  padding: 10px 5px;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #898989;
+  background: none;
+  font-size: 18px;
+}
+
+.aba-input-form-control:focus {
+  outline: none;
+  border-bottom: 2px solid #898989;
+}
+
+.aba-input-form-control[type='password'] {
+  letter-spacing: 0.3em;
+}
+
+.aba-control-label {
+  position: absolute;
+  /* pointer-events: none; */
+  left: 5px;
+  top: 10px;
+  color: #898989;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+
+.aba-input-form-control:focus + .aba-control-label,
+.aba-input-form-control:valid + .aba-control-label {
+  top: -14px;
+  font-size: 12px;
+  color: #898989;
+  font-weight: 600;
+}
+
+.aba-input-form-control:required + .aba-control-label::after{
+  content: "*";
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+
+.login-pf .container {
+  padding-top: 40px;
+}
+
+.login-pf a:hover {
+  color: #0099d3;
+}
+
+.login-pf-header #kc-page-title {
+  margin: 0 0 40px 0;
+  text-align: center;
+  font-weight: 600;
+  color: #AD911E;
+}
+
+#kc-logo {
+  width: 100%;
+}
+
+a.kc-logo-text {
+  display: block;
+  background-image: url(../img/aba-logo-text.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+a.kc-logo-text span {
+  display: none;
+}
+
+#kc-header {
+  color: #ededed;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+#kc-header-wrapper {
+  font-size: 29px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.2em;
+  padding: 62px 10px 20px;
+  white-space: normal;
+}
+
+#kc-content {
+  width: 100%;
+}
+
+#kc-attempted-username {
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: normal;
+  padding-right: 10px;
+}
+
+#kc-username {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #kc-container-wrapper {
+    position: absolute;
+    width: 100%;
+  }
+
+  .login-pf .container {
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .login-pf body {
+    background-color: #f7f5ed;
+  }
+
+  #kc-header {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: none;
+    text-align: left;
+  }
+
+  #kc-header-wrapper {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 60px 0 0;
+    color: #72767b;
+    letter-spacing: 0;
+  }
+
+  div.kc-logo-text {
+    margin: 0;
+    width: 150px;
+    height: 32px;
+    background-size: 100%;
+  }
+
+  .login-pf .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  #kc-logo-wrapper {
+    background-size: 100px 21px;
+    height: 21px;
+    width: 100px;
+    margin: 20px 0 0 20px;
+  }
+}
+
+.card-pf form.form-actions .btn {
+  float: right;
+  margin-left: 10px;
+}
+
+#kc-form-buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.card-pf {
+  background: none;
+  margin: 0 auto;
+  padding: 28px 40px;
+  max-width: 500px;
+  border: 1px solid #707070;
+  box-shadow: 0 0 0;
+}
+
+#kc-content-wrapper .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.login-pf-page .btn-primary {
+  margin-top: 0;
+}
+
+.login-pf-page .list-view-pf .list-group-item {
+  border-bottom: 1px solid #ededed;
+}
+
+.login-pf-page .list-view-pf-description {
+  width: 100%;
+}
+
+.login-pf-page .card-pf {
+  margin-bottom: 10px;
+}
+
+#kc-form-login div.aba-form-group:last-of-type,
+#kc-register-form div.aba-form-group:last-of-type,
+#kc-update-profile-form div.aba-form-group:last-of-type {
+  margin-bottom: 0px;
+}
+
+#kc-back {
+  margin-top: 5px;
+}
